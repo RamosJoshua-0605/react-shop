@@ -40,6 +40,30 @@ const productsData = [
     description: "Description of Product 6",
     price: 60,
   },
+  {
+    id: 7,
+    name: "Product 7",
+    description: "Description of Product 7",
+    price: 70,
+  },
+  {
+    id: 8,
+    name: "Product 8",
+    description: "Description of Product 8",
+    price: 80,
+  },
+  {
+    id: 9,
+    name: "Product 9",
+    description: "Description of Product 9",
+    price: 90,
+  },
+  {
+    id: 10,
+    name: "Product 10",
+    description: "Description of Product 10",
+    price: 100,
+  },
 ];
 
 const App = () => {
