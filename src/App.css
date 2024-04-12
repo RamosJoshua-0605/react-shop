@@ -1,38 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #252525;
+}
+
 .App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  text-align: Left;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #131212;
+  padding: 1rem;
+  border-radius: 5px 5px 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+}
+
+.product {
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.product h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  margin-bottom: 0;
+  color: #2c2b2b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cart {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+}
+
+.cart h2 {
+  margin-top: 0;
+  color: #161616;
+  text-align: left;
+  border-bottom: 2px solid #131212;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.cart li {
+  margin: 0.5rem 0;
+  text-indent: 2rem;
+  color: #161515;
+  text-align: left;
+}
+
+.cart p {
+  margin-bottom: 0;
+  color: #131212;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: larger;
+  color: #161515;
+  text-align: left;
+  border-top: 2px solid #131212;
+}
+
+.add-to-cart-button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-to-cart-button:hover {
+  background-color: #45a049;
 }
