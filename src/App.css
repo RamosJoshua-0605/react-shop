@@ -76,6 +76,11 @@ body {
   border-bottom: 2px solid #131212;
 }
 
+.cart-content {
+  height: 250px;
+  overflow: scroll;
+}
+
 .cart ul {
   list-style: none;
   padding: 0;

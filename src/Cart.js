@@ -7,17 +7,23 @@ const Cart = ({ cartItems }) => {
 
   return (
     <div className="cart">
-      <h2>Cart Summary</h2>
-      <ul>
-        {/*Render a list item for each item in the shopping cart*/}
-        {cartItems.map((item) => (
-          <li key={item.id}>
-            {item.name} : ${item.price}
-          </li>
-        ))}
-      </ul>
+      <div className="heading">
+        <h2>Cart Summary</h2>
+      </div>
+      <div className="cart-content">
+        <ul>
+          {/*Render a list item for each item in the shopping cart*/}
+          {cartItems.map((item) => (
+            <li key={item.id}>
+              {item.name} : ${item.price}
+            </li>
+          ))}
+        </ul>
+      </div>
       {/*Display the total price of the items in the shopping cart*/}
-      <p className="total-price">Total Price: ${totalPrice}</p>
+      <div className="total-price">
+        <p>Total Price: ${totalPrice}</p>
+      </div>
     </div>
   );
 };
