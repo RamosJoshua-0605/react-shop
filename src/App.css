@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles.css (or any other CSS file) */
+.description {
+  white-space: pre-wrap; /* Ensures that newline characters (\n) are respected and the text wraps */
+}
